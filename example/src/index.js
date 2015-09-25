@@ -45,7 +45,7 @@ var App = React.createClass({
         </div>
         {this.state.cropperOpen &&
           <AvatarCropper
-            onRequestHide={this.handleRequestHide}
+            onHide={this.handleRequestHide}
             onCrop={this.handleCrop}
             image={this.state.img}
             width={400}
