@@ -21,6 +21,7 @@
     "react"
   ],
   "dependencies": {
+    "global": "^4.3.1",
     "react-bootstrap": "^0.30.2",
     "warning": "^2.1.0"
   },
