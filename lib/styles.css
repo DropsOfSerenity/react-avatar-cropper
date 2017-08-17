@@ -14,10 +14,10 @@
   border: 1px solid white;
 
   /*required for proper track sizing in FF*/
-  width: 400px;
+  width: 100%;
 }
 .AvatarCropper-base input[type=range]::-webkit-slider-runnable-track {
-  width: 400px;
+  width: 100%;
   height: 5px;
   background: #ddd;
   border: none;
@@ -40,7 +40,8 @@
 }
 
 .AvatarCropper-base input[type=range]::-moz-range-track {
-  width: 400px;
+  /*fixed width causes overflow track size*/
+  width: 100%;
   height: 5px;
   background: #ddd;
   border: none;
@@ -61,7 +62,7 @@
 }
 
 .AvatarCropper-base input[type=range]::-ms-track {
-  width: 400px;
+  width: 100%;
   height: 5px;
 
   /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
