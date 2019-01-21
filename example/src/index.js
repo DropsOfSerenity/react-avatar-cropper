@@ -38,7 +38,10 @@ var App = React.createClass({
             <span>Click to Pick Avatar</span>
             <i className="fa fa-camera"></i>
           </div>
-          <img src={this.state.croppedImg} />
+          <img
+            src={this.state.croppedImg}
+            width="400"
+            height="400" />
         </div>
         {this.state.cropperOpen &&
           <AvatarCropper
@@ -48,6 +51,7 @@ var App = React.createClass({
             image={this.state.img}
             width={400}
             height={400}
+            hiDPI={true}
           />
         }
       </div>
